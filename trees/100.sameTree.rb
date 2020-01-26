@@ -31,36 +31,13 @@
 # Output: false
 
 =begin
-  Two trees are identical if:
-
-  The left and right child trees are structurally identical
-    structurally identical means
-
-    each node has the same value and is in the same position (left / right)
-
-  output a boolean
-
-  Algorithm
-  # some condition for root
-  leftQueue = root.
-
-
-def is_same_tree(p, q)
-  leftQueue = [q]
-  rightQueue = [q]
-
-  # while leftQueue is not empty and rightQueue is not empty
-    return false if leftQueue.size != rightQueue.size
-
-    # can probably refine that if one queue  is empty and other isn't to immediately return false
-
-    leftNodes = []
-    rightNodes = []
-
-    for each
-
-
-end
+Nancy Mental model -
 
 =end
 
+def is_same_tree(r1, r2)
+  return r1.nil? && r2.nil? if r1.nil? || r2.nil?
+  (r1.val == r2.val) && \
+    is_same_tree(r1.left, r2.left) && \
+    is_same_tree(r1.right, r2.right)
+end
