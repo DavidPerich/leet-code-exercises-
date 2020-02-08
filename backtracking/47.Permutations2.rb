@@ -33,7 +33,6 @@ def permute_unique(nums)
 end
 
 def permute_helper(nums, result, candidate, cache)
-  p candidate, nums.size
   if candidate.size == nums.size
     result << candidate.clone()
     return
