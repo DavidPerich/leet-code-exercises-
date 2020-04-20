@@ -13,7 +13,7 @@
 # I was really confused by the !use[i - 1] vs use[i - 1] thing, but after drawing out the path on paper, I understood why we need to use !use[i - 1] for efficiency.
 
 # if (i > 0 && nums[i] == nums[i - 1] && !use[i - 1]) continue; means, in other words, if previous identical number is used, then use the current number.
-
+a
 # why?
 
 # because if you use the opposite way, if (i > 0 && nums[i] == nums[i - 1] && use[i - 1]) continue; which means if previous identical number is NOT used, use this number, you are going to have to keep running the program until the next identical number first populates the temp/list array before the previous identical number, and then you backtrack into the first identical number which then populates the temp/list array.
@@ -50,3 +50,5 @@ def permute_helper(nums, result, candidate, cache)
 end
 
 p permute_unique([1,1,2])
+
+co-authors
